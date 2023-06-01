@@ -1,0 +1,244 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin-left: 10%; 
+    margin-right: 10%;
+    box-sizing: border-box; /* Inclui as margens no cálculo do tamanho total */
+}
+
+/* Navbar */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px; /* Adiciona espaçamento abaixo do navbar */
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.navbar-menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-right: 10px;
+}
+
+.navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    background-color: #f7f7f7;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px; /* Adiciona espaçamento acima do footer */
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Página inicial (Home) */
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home-item {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Página de marcas */
+.marcas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.marcas-item {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.marcas-item:hover {
+    transform: scale(1.05);
+}
+
+/* Página de acessórios */
+.acessorios-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.acessorios-item {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para o carrossel */
+.carousel {
+  display: flex;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.carousel-item {
+  flex: 0 0 25%;
+  scroll-snap-align: start;
+}
+
+/* Estilos para as imagens do carrossel */
+.carousel-image {
+  width: 100%;
+  height: auto;
+  max-width: 250px; /* Tamanho máximo desejado para as imagens */
+  max-height: 300px; /* Tamanho máximo desejado para as imagens */
+}
+
+/* Seção do produto */
+.product-section {
+    padding: 20px 0;
+}
+
+.product-details {
+    display: flex;
+    align-items: center;
+}
+
+.product-image {
+    flex: 0 0 40%;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 1px solid #ccc;
+    transition: transform 0.3s ease; /* Adiciona transição suave ao efeito de zoom */
+}
+
+.product-image img:hover {
+    transform: scale(1.1); /* Efeito de zoom na imagem */
+}
+
+.product-info {
+    flex: 0 0 60%;
+    padding-left: 20px;
+}
+
+.product-info p {
+    margin-bottom: 10px;
+}
+
+.buy-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-button:hover {
+    background-color: #555;
+}
+
+p {
+    margin-right: 5%;
+}
+
+/* Página de marcas */
+.marcas-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.marcas-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.marca-item {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.marca-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* acessorios */
+
+.acessorios-section {
+    padding: 20px 0;
+}
+
+.acessorios-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.acessorio-item {
+    margin: 5px;
+}
+
+.acessorio-item img {
+    width: 100%;
+    height: 100%;
+    max-width: 180px;
+    max-height: 180px;
+    border: 1px solid #ccc;
+    
+}
